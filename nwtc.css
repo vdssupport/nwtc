@@ -1,0 +1,163 @@
+/*
+{{Color__1}}: (don't include the '#')
+{{Color__1__Shade}}: #{{Color__1__Shade}}; (goto http://www.color-hex.com/color/{{Color__1}} ; use the second Shade -- just needs to be a little bit darker.)
+{{Color__2}}: (don't include the '#')
+{{Color__2__Tint}}: #{{Color__2__Tint}}; (goto http://www.color-hex.com/color/{{Color__2}} ; find the color similar to e_e_e_) (Make sure this color is accessible by going to http://accessible-colors.com and checking Color_2_Tint on a background of both Color__1 and Color__2; select the suggested text color that works for both backgrounds)
+{{Logo_URL}}: {{Logo_URL}} i.e. www.wingate.edu/wp-content/uploads/2015/06/logo.png
+*/
+
+html {
+  background: #003865;
+}
+
+.splash {
+  background-color: #003865;
+}
+
+.splash .loading path {
+  fill: #fff;
+}
+
+header.header-main {
+  background-color: #003865;
+  height:10.5em;
+}
+
+.logo {
+  background: url('//vdssupport.github.io/nwtc/NWTC_logo_horiz_COLOR_RGB.jpg') top center no-repeat;
+  display: inline-block;
+  max-width: 400px !important;
+  background-size: contain;
+}
+
+header.header-page {
+  background-color:#0061A0;
+}
+
+/*photo section menu link behind*/
+.header-page .tabs li a {
+  border-bottom-color:#0061A0;
+  color: #{{Color_2_Tint}};
+}
+
+.header-page .tabs li a:hover,
+.header-page .tabs li a:focus
+
+{
+  color: #fff; /*Pending,Approved,Denied,Downloaded,Done,Enroute links*/
+}
+
+/* Keep this block only if it looks good. */
+/* Default violet color when selected pending, approved, denied, download, done and enroute 003865 */
+.header-page .tabs a.active {
+    border-bottom-color: #003865;
+}
+
+.header-page .buttons button {
+  background-color: #003865; /*003865 MAIN BUTTONS and button links*/
+  color: #fff; /* fff - text in button */
+}
+
+.header-page button {
+  background-color: #0061A0; /*0061A0 I DONT KNOW???*/
+  color: #fff; /*fff I DONT KNOW */
+}
+
+.header-page .buttons button:hover,
+.header-page .buttons button:focus 
+{
+  background-color: #{{Color_2_Tint}}; /*{{Color_2_Tint}}  BUTTON Hover color*/
+  color: #003865; /* 003865 */
+
+  /* Alternative if the above doesn't look so great.
+  background-color: #0061A0;
+  color: #fff;
+   */
+}
+
+.header-page .filters .filter:hover select,
+.header-page .filters .filter:focus-within select {
+    background-color: #003865;
+    color: #fff; /* fff  Custom fields text before click */
+}
+
+.header-page .filters .filter:hover:after,
+.header-page .filters .filter:focus-within:after {
+    color: #fff; /* fff Custom fields text after click color */
+}
+
+button {
+    background-color: #0061A0; /* 0061A0  I think the history button */
+}
+
+button:hover,
+button:focus {
+    background-color: #{{Color_2_Tint}}; /* {{Color_2_Tint}} I DO NOT KNOW */
+} 
+
+router-view .buttons button.primary,
+#accept-terms,
+button.submit-login
+{
+    background-color: #003865; /* 003865 I DO NOT KNOW */
+}
+
+router-view .buttons button.primary:hover,
+router-view .buttons button.primary:focus,
+#accept-terms:hover,
+#accept-terms:focus,
+button.submit-login:hover,
+button.submit-login:focus
+{
+    background-color: #{{Color_1_Shade}}; /* {{Color_1_Shade}} */
+}
+
+.user-info {
+    color: #fff; /* user account and org logged in */
+}
+
+.user-info a {
+    color: #{{Color_2_Tint}}; /* signout link */ 
+}
+
+.user-info a:hover,
+.user-info a:focus {
+    color: #fff; /* fff I DONT KNOW THINK it's the hover for SIGN OUT link */
+}
+
+.open-nav {
+    color: #ddd; /* ddd I DONT KNOW */
+}
+
+.open-nav:hover,
+.open-nav:focus
+{
+    color: #fff; /* ddd I DONT KNOW */
+}
+
+.admin-links .fa {
+    color: #{{Color_2_Tint}}; /*default #007bff - default #007bff -{{Color_2_Tint}} side menu icons*/
+}
+
+table th,
+table td {
+    background: #{{Color_2_Tint}}; /*main grid colors*/
+}
+
+.footer {
+    background: #003865;	 /*footer*/
+}
+
+/* Uncomment this block if the organization has a Plus Account.
+img.photos--preview {
+    border-bottom: 0px;
+}
+*/
+
+/* Uncomment this block to hide the Download photos button.
+   HOWEVER: if the client is downloading photos using an external tool (e.g. RapidCard Elite or the CloudCard Image Server), 
+	they should be migrated over to using the `EXTERNAL` download strategy rather than hiding the download button.
+button.download_button {
+	display: none;
+}
+*/
