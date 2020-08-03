@@ -136,7 +136,7 @@ button.submit-login:focus
 }
 
 .admin-links .fa {
-    color: #{{Color_2_Tint}}; /*default #007bff - default #007bff -{{Color_2_Tint}} side menu icons*/
+    color: #cce5f6; /*default #007bff - default #007bff -{{Color_2_Tint}} side menu icons*/
 }
 
 table th,
