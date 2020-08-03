@@ -7,11 +7,11 @@
 */
 
 html {
-  background: #003865;
+  background: #cce5f6;
 }
 
 .splash {
-  background-color: #003865;
+  background-color: #cce5f6;
 }
 
 .splash .loading path {
@@ -19,8 +19,8 @@ html {
 }
 
 header.header-main {
-  background-color: #003865;
-  height:10.5em;
+  background-color: #cce5f6;
+  height:8.5em;
 }
 
 .logo {
@@ -36,7 +36,7 @@ header.header-page {
 
 /*photo section menu link behind*/
 .header-page .tabs li a {
-  border-bottom-color:#0061A0;
+  border-bottom-color:#cce5f6;
   color: #{{Color_2_Tint}};
 }
 
@@ -59,7 +59,7 @@ header.header-page {
 }
 
 .header-page button {
-  background-color: #0061A0; /*0061A0 I DONT KNOW???*/
+  background-color: #cce5f6; /*0061A0 I DONT KNOW???*/
   color: #fff; /*fff I DONT KNOW */
 }
 
